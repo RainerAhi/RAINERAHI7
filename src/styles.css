@@ -9,7 +9,7 @@
 * {
   margin: 0;
   padding: 0;
-  cursor: none;
+  cursor: auto;
 }
 
 body {
@@ -19,43 +19,21 @@ body {
   overflow-x: hidden;
 }
 
-.nav {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.cursor-dot,
-.cursor-dot-outline {
-  pointer-events: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-  z-index: 5;
-}
-
-.cursor-dot {
-  width: 30px;
-  height: 30px;
-  background-color: #282929;
-  border: 2px solid #f5f4f4;
-}
-
-.cursor-dot-outline {
-  width: 0px;
-  height: 0px;
-  background-color: #4158D0;
-  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
-}
-
+/* SCROLLBAR */
 
 ::-webkit-scrollbar {
-  display: none;
+  width: 10px;
 }
+
+::-webkit-scrollbar-thumb {
+  background-color: #282929;
+}
+/* TRACK */
+::-webkit-scrollbar-track {
+  background-color: #f5f4f4;
+}
+
+/* SECTION ONE */
 
 .intro {
   height: 100vh;
@@ -64,9 +42,52 @@ body {
   flex-direction: column;
   position: relative;
   margin-bottom: 15%;
+  align-self: center;
+  justify-content: center;
+}
+
+
+/* NAVIGATION BAR */
+.nav {
+  background-color: transparent;
+  width: 100%;
+  height: 7%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0;
+  align-items: center;
+  z-index: 10;
+  bottom: auto;
+  top: 0;
+  margin-top: 2.5%;
+  color: black;
+  position: absolute;
+}
+
+.smalllogo {
+  height: 50px;
+  padding-left: 100px;
+}
+
+.center {
+  width: auto;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 100px;
+}
+
+.center h1 {
+  color: #282929;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 2rem;
 }
 
 .title {
+  width: 100%;
   font-size: 14rem;
   line-height: 13rem;
   font-weight: 400;
@@ -74,17 +95,17 @@ body {
   color: #282929;
   font-family: 'Montserrat', sans-serif;
   font-weight: 900;
-  text-align: end;
+  text-align: center;
   position: absolute;
-  right: 0;
-  margin-top: 7.5%;
-  padding-right: 40px;
+  cursor: default;
 }
 
 .exp {
   font-family: 'Playfair Display SC', serif;
   font-weight: 700;
   display: inline;
+  cursor: default;
+  text-align: center;
 }
 
 .name {
@@ -94,43 +115,9 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-.scroll {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  border-color: #282929;
-  border-style: dashed;
-  border-width: 1px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.75rem;
-  position: absolute;
-  bottom: 0;
-  align-self: center;
-  margin-bottom: 2.5%;
-}
-
-
-.rainer {
-  width: 500px;
-}
-
 span {
   display: block;
   overflow: hidden;
-}
-.banner {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.banner .bannerImg {
-  object-fit: contain;
-  height: 50vh;
-  transition: opacity 0.3s ease-in-out;
-  opacity: 0;
 }
 
 .projects-section {
@@ -148,8 +135,8 @@ span {
   border-color: #282929;
   border-style: solid;
   border-width: 1px;
-  margin-top: 2.5%;
-  margin-bottom: 2.5%;
+  margin-top: 0%;
+  margin-bottom: 0%;
 }
 
 .projects {
@@ -163,12 +150,13 @@ span {
   display: flex;
   padding: 12px 20px;
   gap: 0px 10px;
-  cursor: none;
+  cursor: default;
   justify-content: flex-start;
+  align-items: center;
 }
 .project h1 {
-  font-size: 11rem;
-  line-height: 124px;
+  font-size: 7.5rem;
+  line-height: auto;
   font-weight: 400;
   opacity: 1;
   transition: opacity 0.5s ease-in-out;
@@ -176,22 +164,25 @@ span {
   color: #282929;
   font-family: 'Montserrat', sans-serif;
   font-weight: 900;
+  cursor: pointer;
 }
 .project > img {
-  height: 138px;
+  height: 100px;
   align-self: center;
   object-fit: contain;
   transition: all 0.5s ease-in-out;
   transform: scale(0);
+  cursor: pointer;
 }
 
 .project span p {
   text-transform: uppercase;
-  font-size: 17px;
+  font-size: 15px;
   width: 0px;
   transition: width 0.5s;
   font-weight: 600;
   color: transparent;
+  cursor: pointer;
 }
 
 .project:hover h1 {
