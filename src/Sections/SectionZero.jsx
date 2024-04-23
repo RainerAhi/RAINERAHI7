@@ -13,8 +13,7 @@ export const SectionZero = () => {
           </div>
       </div>
       <h1 className="title">
-        <span className="exp">DEV</span>ELOPER <br /> FOR WEB <br />
-        <span className="exp">EXPERIENCES</span>
+        DEVELOPER <br /> FOR <span className="no-span headline-blue" >WEB</span> <br />EXPERIENCES
       </h1>
     </section>
   );
