@@ -66,30 +66,30 @@ body {
 }
 
 .smalllogo {
-  height: 50px;
-  padding-left: 100px;
+  height: 2.5vw;
+  padding-left: 5vw;
 }
 
 .center {
   width: auto;
-  height: 300px;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-right: 100px;
+  padding-right: 5vw;
 }
 
 .center h1 {
   color: #282929;
   font-family: 'Montserrat', sans-serif;
   font-weight: 900;
-  font-size: 2rem;
+  font-size: 1.75vw;
 }
 
 .title {
   width: 100%;
-  font-size: 14rem;
-  line-height: 13rem;
+  font-size: 12vw;
+  line-height: 80%;
   font-weight: 400;
   opacity: 1;
   color: #282929;
@@ -106,13 +106,6 @@ body {
   display: inline;
   cursor: default;
   text-align: center;
-}
-
-.name {
-  padding: 20px 20px;
-  font-size: 2rem;
-  font-weight: bold;
-  font-family: 'Montserrat', sans-serif;
 }
 
 span {
@@ -144,18 +137,16 @@ span {
   flex-direction: column;
   width: 100%;
   height: fit-content;
-  padding: 10px 0px;
 }
 .projects > .project {
   display: flex;
-  padding: 12px 20px;
-  gap: 0px 10px;
+  padding: 0.75vw 1vw;
   cursor: default;
   justify-content: flex-start;
   align-items: center;
 }
 .project h1 {
-  font-size: 7.5rem;
+  font-size: 6.5vw;
   line-height: auto;
   font-weight: 400;
   opacity: 1;
@@ -167,7 +158,7 @@ span {
   cursor: pointer;
 }
 .project > img {
-  height: 100px;
+  height: 5vw;
   align-self: center;
   object-fit: contain;
   transition: all 0.5s ease-in-out;
@@ -177,7 +168,7 @@ span {
 
 .project span p {
   text-transform: uppercase;
-  font-size: 15px;
+  font-size: 0.75vw;
   width: 0px;
   transition: width 0.5s;
   font-weight: 600;
@@ -194,7 +185,7 @@ span {
   transition: all 0.5s ease-in-out;
 }
 .project:hover span p {
-  width: 115px;
+  width: 6vw;
   transition: width 0.5s;
   color: #282929;
 }
