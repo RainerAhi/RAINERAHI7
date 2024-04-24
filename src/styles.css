@@ -28,6 +28,12 @@ body {
   animation: animate 8s linear infinite alternate;
 }
 
+@keyframes animate {
+  0% { background-position: 100% 100%; }
+  100% { background-position: 0 0; }
+}
+
+
 .no-span {
   display: inline;
 }
