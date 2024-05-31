@@ -16,7 +16,16 @@ body,
 }
 
 ::-webkit-scrollbar {
-  display: auto;
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  height: 10vh;
+}
+/* TRACK */
+::-webkit-scrollbar-track {
+  background-color: #eaebea;
 }
 
 section {
