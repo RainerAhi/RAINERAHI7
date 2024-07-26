@@ -62,6 +62,12 @@ export const Section1 = () => {
               <div className="list-border" />
               <li class="flex-item grey-marker">
                 <div>
+                  <h1 className="experience-description" >Dialedweb (June 2024 - Present)</h1>
+                  <h1 className="experience-small-description" >Agency offering web services</h1>
+                </div>
+              </li>
+              <li class="flex-item light-grey-marker">
+                <div>
                   <h1 className="experience-description" >Peak Creations (May 2024 - Present)</h1>
                   <h1 className="experience-small-description" >Web agency offering many services</h1>
                 </div>
@@ -95,6 +101,32 @@ export const Section1 = () => {
                 className="project"
                 whileHover={{ y: -10, }}
                 transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                onClick={() => handleClick('https://www.dialedweb.com/')}
+              >
+                <div className="project-icon">
+                  <i class="fa-solid fa-bars"></i>
+                </div>
+                <h1 className="project-title" >Dialedweb</h1>
+                <h1 className="project-description" >Built a website for an agency that offers all kinds of web services.</h1>
+              </motion.div>
+
+              <motion.div
+                className="project"
+                whileHover={{ y: -10, }}
+                transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                onClick={() => handleClick('https://stalik.vercel.app/')}
+              >
+                <div className="project-icon">
+                  <i class="fa-solid fa-house"></i>
+                </div>
+                <h1 className="project-title" >Stalik</h1>
+                <h1 className="project-description" >Created a personal website for a real estate professional.</h1>
+              </motion.div>
+
+              <motion.div
+                className="project"
+                whileHover={{ y: -10, }}
+                transition={{ type: "spring", stiffness: 400, damping: 10 }}
                 onClick={() => handleClick('https://room-example.vercel.app/')}
               >
                 <div className="project-icon">
@@ -108,26 +140,13 @@ export const Section1 = () => {
                 className="project"
                 whileHover={{ y: -10, }}
                 transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                onClick={() => handleClick('https://sodasite2.vercel.app/')}
+                onClick={() => handleClick('https://dialedwebseltzers.vercel.app/')}
               >
                 <div className="project-icon">
                   <i class="fa-solid fa-mug-saucer"></i>
                 </div>
-                <h1 className="project-title" >Sodasite</h1>
-                <h1 className="project-description" >Developed a soda brand's scroll-animated 3D landing page.</h1>
-              </motion.div>
-
-              <motion.div
-                className="project"
-                whileHover={{ y: -10, }}
-                transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                onClick={() => handleClick('https://peakcreations.vercel.app/')}
-              >
-                <div className="project-icon">
-                  <i class="fa-solid fa-bars"></i>
-                </div>
-                <h1 className="project-title" >Peak Creations</h1>
-                <h1 className="project-description" >Building a web agency offering many services.</h1>
+                <h1 className="project-title" >Seltzers</h1>
+                <h1 className="project-description" >Developed a brand's scroll-animated 3D landing page.</h1>
               </motion.div>
 
               <motion.div
@@ -154,19 +173,6 @@ export const Section1 = () => {
                 </div>
                 <h1 className="project-title" >YTFIN</h1>
                 <h1 className="project-description" >Developed a modern 3D website with many scroll-animations.</h1>
-              </motion.div>
-              
-              <motion.div
-                className="project"
-                whileHover={{ y: -10, }}
-                transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                onClick={() => handleClick('https://kalev-chocolate-showcase-by-rainer-ahi.vercel.app/')}
-              >
-                <div className="project-icon">
-                  <i class="fa-solid fa-cookie-bite"></i>
-                </div>
-                <h1 className="project-title" >Chocolate</h1>
-                <h1 className="project-description" >Developed an immersive 3D landing page.</h1>
               </motion.div>
               
               <motion.div
