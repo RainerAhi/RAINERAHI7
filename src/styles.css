@@ -33,12 +33,16 @@ section {
   height: fit-content;
   z-index: 1;
   pointer-events: all;
-  background-color:#fefeff95;
+  background-color:white;
   display: flex;
   flex-direction: column;
   padding-left: 10%;
   padding-right: 10%;
   padding-top: 5%;
+  /* background-size: cover;
+  background-position: center;
+  background-image: url('/p2.png');
+  background-attachment: fixed; */
 }
 
 
@@ -47,13 +51,14 @@ section {
 .one-content {
   width: 100%;
   height: 100%;
-  background-color: #fefeff;
+  background-color: #fefeff90;
+  backdrop-filter: blur(15px);
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   display: flex;
   flex-direction: column;
   padding: 2.5% 4%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.075), 0 6px 20px rgba(0, 0, 0, 0.075);
 }
 
 .one-content-inside {
