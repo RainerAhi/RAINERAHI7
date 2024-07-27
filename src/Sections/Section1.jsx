@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion"
+import CanvasContainer from "../CanvasContainer";
 
 export const Section1 = () => {
 
@@ -14,7 +15,9 @@ export const Section1 = () => {
         <div className="one-content-inside" >
 
           <div className="introduction" >
-            <div className="profile-picture" />
+            <div className="profile-picture" >
+              <CanvasContainer />
+            </div>
             <h1 className="introduction-name">Rainer Ahi</h1>
             <h1 className="introduction-skills">Entrepreneur, Developer & Athlete</h1>
             <div className="introduction-socials">

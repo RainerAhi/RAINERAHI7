@@ -1,5 +1,6 @@
 import Lenis from "@studio-freight/lenis";
 import { Section1 } from "./Sections/Section1";
+import CanvasContainer from "./CanvasContainer";
 function App() {
 
   const lenis = new Lenis({
@@ -31,6 +32,7 @@ function App() {
 
   return (
     <>
+
       <Section1 />
     </>
   )
